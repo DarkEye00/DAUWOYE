@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="max-w-5xl mx-auto">
+    <div class="flex flex-col justify-center items-center my-10 text-3xl text-justify font-Inter">
+        <h2>Thank You for showing interest in supporting our work 😁.</h2>
+
+        <p>We are currently working on integrating mobile payment options in our website.</p>
+
+        <p>To channel your donations kindly contact 
+            0727 520 811 or reach us through our social media platforms.</p>
+    </div>
+    <div class="flex gap-x-10 max-md:flex-col">
+        <img class="object-cover w-[500px] h-[300px]"  src="{{url_for('static', filename='media/Dignity.jpg')}}"/>
+        <p class="py-5 text-xl">
+            <span class="text-bold text-2xl text-blue-600">SUPPORT TO YOUNG WOMEN</span><br>
+            With the support of Kenya Red Cross, Daraja united Women & youth Empowerement Organization is cushioning the vulnerable young women and girls to preserve their dignity through issuance of dignity kits in South Mugirango Kisii County Kisii County. <br>
+            <span><button class="bg-blue-600 p-3 text-white mt-3 rounded-md ">Join Us</button></span>
+        </p>
+            
+    </div>
+</section>
+{% endblock %}

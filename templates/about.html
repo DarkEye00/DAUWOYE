@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="w-full font-Inter">
+    <div class="h-[70vh]">
+        <div class="absolute bg-black/30 w-full h-[70vh] text-white flex items-center justify-center text-2xl">
+            <p>DAUWOYE<span class="text-blue-600 text-3xl"> .</span> WHO WE ARE</p>
+
+        </div>
+        <img class="w-full h-[inherit] object-cover" src="{{url_for('static', filename='media/Mentorship.jpeg')}}" />
+
+    </div>
+
+    <div class="max-w-4xl text-center mx-auto py-5">
+        <h2 class="text-blue-600 text-2xl font-semibold">About Us</h2>
+        <h2 class="font-semibold text-xl">Welcome To DAUWOYE</h2>
+        <p>Daraja United Women and Youth Empowerment is a Kenyan, women/youth – led national NGO focused on women and youth empowerment. We work in the rural areas of Kenya, but are currently in Kisii and Nyamira counties. It was incepted in 1997 as a self-help group by the name of Bidii Women Group. The focus of the organization was to create economic empowerment opportunities for women. The organization took part in several program focusing on HIV/AIDs, sexual reproductive health in general. In December 2007, we registered as an NGO (Non-Governmental Organization) under our current title, Daraja United Women and Youth Empowerment (DAUWOYE).</p>
+    </div>
+
+    <div class="w-full text-center mx-auto py-5 bg-white">
+        <h2 class="text-blue-600 text-2xl font-semibold">What We Do</h2>
+
+        <div class="flex gap-x-10 items-center justify-center max-md:flex-col">
+            <div>
+                <h2 class="text-2xl py-5 font-semibold">Health<br> Program</h2>
+
+                <img class="w-[200px] h-[200px] object-cover" src="{{url_for('static', filename='media/Health logo.jpeg')}}" />
+                
+            </div>
+            <div>
+                <h2 class="text-2xl py-5 font-semibold">Women<br> Empowerment</h2>
+                <img class="w-[200px] h-[200px] object-cover" src="{{url_for('static', filename='media/Woman logo.jpg')}}" />
+            </div>
+            <div>
+                <h2 class="text-2xl py-5 font-semibold">Advocate for<br> End of FGM</h2>
+
+                <img class="w-[200px] h-[200px] object-cover" src="{{url_for('static', filename='media/end fgm.jpg')}}" />
+            </div>
+            <div>
+                <h2 class="text-2xl py-5 font-semibold">Youth Empowerment</h2>
+                
+                <img class="w-[200px] h-[200px] object-cover" src="{{url_for('static', filename='media/Youth.jpg')}}" />
+            </div>
+        </div>
+    
+        
+    </div>
+</section>
+
+{% endblock %}

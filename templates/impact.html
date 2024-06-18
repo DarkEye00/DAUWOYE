@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="w-full font-Inter">
+    <div class="h-[70vh]">
+        <div class="absolute bg-black/10 w-full h-[70vh] text-white flex items-center justify-center text-2xl">
+            <p>DAUWOYE<span class="text-blue-600 text-3xl"> .</span> WHO WE ARE</p>
+
+        </div>
+        <img class="w-full h-[inherit] object-cover" src="{{url_for('static', filename='media/Campaignings.jpg')}}" />
+
+    </div>
+    <p class="text-2xl text-center py-5">We are always championing for various causes within the country and in Kisii.</p>
+        
+            <div class="p-5 flex items-center space-x-5 text-lg max-md:flex-col">
+                <img class="w-[400px] h-[300px]" src="{{url_for('static', filename='media/reception.jpeg')}}" />
+            
+                <p><span class="text-xl text-blue-600">Health Care</span><br >
+                    As Daraja United Women And Youth Empowerment Organization,<br> we have a health care center setup to cater for the health needs of<br> citizens based in Kisii. To learn more about the services,<br> kindly visit our Health Care Center in Kisii Town Near Mwembe. </p>
+
+            </div>
+
+            <div class="p-5 flex flex-row-reverse items-center gap-x-5 text-lg max-md:flex-col" >
+                <img class="w-[400px] h-[300px]" src="{{url_for('static', filename='media/HIV.jpg')}}" />
+            
+                <p><span class="text-xl text-blue-600 text-left">HIV Awareness</span><br >
+                HIV is a menace in the country and around the world and as such, <br>We pride ourselves in raising awareness in HIV abstinence and<br > prevention in order to curb its spread within the country. </p>
+
+            </div>
+
+            <div class="p-5 flex items-center space-x-5 text-lg max-md:flex-col">
+                <img class="w-[400px] h-[300px]" src="{{url_for('static', filename='media/GBV.jpg')}}" />
+            
+                <p><span class="text-xl text-blue-600">Gender Based Violence</span><br >
+                    DAUWOYE engages community leadership to educate them that<br> there are better ways of solving conflicts other than violence.<br> We also campaign for laws and policies that protect and<br> promote women's rights. </p>
+
+            </div>
+            <div class="p-5 flex flex-row-reverse items-center gap-x-5 text-lg max-md:flex-col" >
+                <img class="w-[400px] h-[300px]" src="{{url_for('static', filename='media/end fgm.jpg')}}" />
+            
+                <p><span class="text-xl text-blue-600 text-left">Awareness on FGM</span><br >
+                FGM is a violation of girl's and women's human rights.<br> It has adverse effects on women including risks during<br > childbirth. We are always on the forefront of combating<br> FGM together with other organizations within the country. </p>
+
+            </div>
+
+            <div class="p-5 flex items-center space-x-5 text-lg max-md:flex-col">
+                <img class="w-[400px] h-[300px] object-cover" src="{{url_for('static', filename='media/schools.jpg')}}" />
+            
+                <p><span class="text-xl text-blue-600">Education</span><br >
+                    We help needy young girls and boys within the society<br> get access to education with all the required equipment.<br> Partnering with other organizations and well wishers,<br> we bring a smile to every child in need of education. </p>
+
+            </div>
+
+</section>
+
+{% endblock %}
