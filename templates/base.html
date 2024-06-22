@@ -12,7 +12,7 @@
     
 
 </head>
-<body class="min-h-screen w-full bg-[#faf8f8] overflow-x-clip font-sans text-slate-800">
+<body class="min-h-screen w-full bg-[#ededed] overflow-x-clip font-sans text-slate-800 ">
     <header class="bg-green-200 top-0 z-[50] w-full">
         <section class="max-w-5xl p-2 flex justify-between items-start sm:w-auto 2xl:ml-[30rem]">
             <a href="{{url_for('index')}}">
@@ -30,7 +30,7 @@
                     <div id="dropdownHover" class="z-10 hidden bg-white rounded-lg divide-y divide-gray-100 w-28 h-28 shadow-xl" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(179.5px, 1559px, 0px);">
                         <ul class="text-sm py-2 text-blue-800 hover:text-white">
                                
-                          <a href="vacancy.html"><li class="block px-4 py-2 hover:bg-gray-600"><i class="fa-solid fa-suitcase" style="color: #1e57b8; padding-right:4px;" aria-hidden="true"></i>Vacancy</li></a>
+                          <a href="{{url_for('vacancy')}}"><li class="block px-4 py-2 hover:bg-gray-600"><i class="fa-solid fa-suitcase" style="color: #1e57b8; padding-right:4px;" aria-hidden="true"></i>Vacancy</li></a>
                            
                           <a href="{{url_for('contact')}}"><li class="block px-4 py-2 hover:bg-gray-600"><i class="fa-solid fa-newspaper" style="color: #1e57b8; padding-right:4px;" aria-hidden="true"></i>Contact Us</li></a>
                         </ul>
@@ -43,29 +43,29 @@
         </section>  
 
         <!--Mobile menu-->
-        <section id="mobile-menu" class="absolute top-0 bg-green-500/90 w-full text-2xl font-medium flex-col justify-center origin-top animate-open-menu hidden text-white">
+        <section id="mobile-menu" class="absolute top-0 z-20 bg-black/80 w-full text-2xl font-medium flex-col justify-center origin-top animate-open-menu hidden text-white">
             <button class="text-6xl self-end px-6 ">
                 &times;
             </button>
-            <nav class="flex flex-col min-h-screen items-center py-6 text-white " aria-label="mobile-menu">
-                <a href="{{url_for('index')}}" class="w-full text-center hover:opacity-80 py-3">
+            <nav class="flex flex-col min-h-screen items-center py-6 gap-8 text-white " aria-label="mobile-menu">
+                <button><a href="{{url_for('index')}}" class="w-full text-center hover:opacity-80 py-3">
                     HOME
-                </a>
-                <a href="{{url_for('about')}}" class="w-full text-center  hover:opacity-80 py-3">
+                </a></button>
+                <button><a href="{{url_for('about')}}" class="w-full text-center  hover:opacity-80 py-3">
                     WHO WE ARE
-                </a>
-                <a href="{{url_for('impact')}}" class="w-full text-center hover:opacity-80 py-3">
+                </a></button>
+                <button><a href="{{url_for('impact')}}" class="w-full text-center hover:opacity-80 py-3">
                     OUR IMPACT
-                </a>
-                <a href="#" class="w-full text-center hover:opacity-80 py-3">
-                    NEWS $ UPDATES
-                </a>
-                <a href="#" class="w-full text-center hover:opacity-80 py-3">
+                </a></button>
+                <button><a href="#" class="w-full text-center hover:opacity-80 py-3">
+                    NEWS & UPDATES
+                </a></button>
+                <button><a href="{{url_for('contact')}}" class="w-full text-center hover:opacity-80 py-3">
                     CONTACT US
-                </a>
-                <a href="#" class="w-full text-center hover:opacity-80 py-3">
+                </a></button>
+                <button><a href="{{url_for('donate')}}" class="w-full text-center hover:opacity-80 py-3">
                     DONATE NOW
-                </a>
+                </a></button>
              
 
             </nav>

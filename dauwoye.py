@@ -1,6 +1,10 @@
 from flask import Flask, render_template, request
+from flask_frozen import Freezer
 
 app = Flask(__name__)
+
+freezer = Freezer(app)
+
 
 @app.route("/")
 def index():
@@ -21,5 +25,10 @@ def impact():
 @app.route("/Contact-us/")
 def contact():
     return render_template("contact.html")
+
+@app.route("/careers/")
+def vacancy():
+    return render_template("vacancy.html")
+
 if __name__ == ("__main__"):
     app.run(debug=True)

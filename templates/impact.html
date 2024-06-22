@@ -1,11 +1,11 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block content %}
 
 <section class="w-full font-Inter">
     <div class="h-[70vh]">
-        <div class="absolute bg-black/10 w-full h-[70vh] text-white flex items-center justify-center text-2xl">
-            <p>DAUWOYE<span class="text-blue-600 text-3xl"> .</span> WHO WE ARE</p>
+        <div class="absolute bg-black/20 w-full h-[70vh] text-white flex items-center justify-center text-2xl z-10">
+            <p>DAUWOYE<span class="text-blue-600 text-3xl"> .</span> OUR IMPACT</p>
 
         </div>
         <img class="w-full h-[inherit] object-cover" src="{{url_for('static', filename='media/Campaignings.jpg')}}" />
@@ -13,11 +13,11 @@
     </div>
     <p class="text-2xl text-center py-5">We are always championing for various causes within the country and in Kisii.</p>
         
-            <div class="p-5 flex items-center space-x-5 text-lg max-md:flex-col">
+            <div class="p-5 mx-10 flex items-center space-x-5 text-lg max-md:flex-col">
                 <img class="w-[400px] h-[300px]" src="{{url_for('static', filename='media/reception.jpeg')}}" />
             
-                <p><span class="text-xl text-blue-600">Health Care</span><br >
-                    As Daraja United Women And Youth Empowerment Organization,<br> we have a health care center setup to cater for the health needs of<br> citizens based in Kisii. To learn more about the services,<br> kindly visit our Health Care Center in Kisii Town Near Mwembe. </p>
+                <p class="text-justify"><span class="text-xl text-blue-600">Health Care Program</span><br >
+                    As an organization, we have one health facility with her annex, which<br> offer medical services where we provide treatment of basic illness.<br> We have several wards in our clinics where we admit our patients.<br> We treat both in patients and out patients, and offer treatment to both<br> kids and adults.These are for income generation and sustainability.<br>To learn more about the services, kindly visit our Health Care Center in<br> Kisii Town Near Mwembe. </p>
 
             </div>
 
@@ -37,10 +37,11 @@
 
             </div>
             <div class="p-5 flex flex-row-reverse items-center gap-x-5 text-lg max-md:flex-col" >
-                <img class="w-[400px] h-[300px]" src="{{url_for('static', filename='media/end fgm.jpg')}}" />
+                <img class="w-[400px] h-[300px]" src="{{url_for('static', filename='media/Rights.jpg')}}" />
             
-                <p><span class="text-xl text-blue-600 text-left">Awareness on FGM</span><br >
-                FGM is a violation of girl's and women's human rights.<br> It has adverse effects on women including risks during<br > childbirth. We are always on the forefront of combating<br> FGM together with other organizations within the country. </p>
+                <p><span class="text-xl text-blue-600 text-left">Advocacy Program</span><br >
+                    We collaborate and network with other organizatios like<br> the Human
+                    Rights Organizations to amplify the voices of<br> women and youths. Through capacity building, we always<br> champion for laws and policies that accommodate women's<br> views and are co-opted on decision-making. We educate the<br> youths and girls to know and make use of their rights. We do<br> mobilisation at the grassroots through communiy outreaches<br> to raise awareness. We collaborate and network with other<BR> organizatios like the Human Rights Organizations to amplify<br> the voices of women and youths. </p>
 
             </div>
 
@@ -48,7 +49,18 @@
                 <img class="w-[400px] h-[300px] object-cover" src="{{url_for('static', filename='media/schools.jpg')}}" />
             
                 <p><span class="text-xl text-blue-600">Education</span><br >
-                    We help needy young girls and boys within the society<br> get access to education with all the required equipment.<br> Partnering with other organizations and well wishers,<br> we bring a smile to every child in need of education. </p>
+                    Through our partners, we were able to give 200 girls<br> uniforms, shoes, and school bags to ensure they go<br> back to school. Every child deserves an opportunity to<br> go to school.
+                    We help needy young girls and boys within<br> the society get access to education with all the required equipment. </p>
+
+            </div>
+
+            <div class="p-5 flex flex-row-reverse items-center gap-x-5 text-lg max-md:flex-col" >
+                <img class="w-[400px] h-[300px]" src="{{url_for('static', filename='media/Business.jpg')}}" />
+            
+                <p><span class="text-xl text-blue-600 text-left">Socio-economic</span><br >
+                    DAUWOYE does a follow up on the women they empower to ensure
+                    that<br> they do not lag and improve their lives and that of their families.<br>
+                    We empower women and youths by offering seed grants through our partners.<br> We identify vulnerable youths, mostly teenage mothers who access training and<br> mentorship on entrepreneurship.We identify vulnerable youths<br> (mostly teenage mothers) and women who access training and mentorship on<br> entrepreneurship. Later on, they are given seed capital to attain self reliance. </p>
 
             </div>
 
