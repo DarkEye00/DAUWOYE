@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="pt-14 max-w-5xl mx-auto">
+<div class="ml-10 p-5">
+    <h1 class="text-blue-400 font-semibold">REPORTS</h1>
+    <p>We are pleased to share our latest research and analysis reports with you.<br> These reports contain valuable insights and data that can help you stay informed and make better decisions.</p>
+
+    <h2 class="text-green-700 my-5 font-medium">Available Annual Reports:</h2>
+
+    <div class="report-summary">
+        <h3 class="font-semibold">2019 - 2021 REPORTS</h3>
+        <p>This report provides an in-depth analysis of our longterm achievement upto the year 2021. click in the reports to download for offline review</p>
+        <ul>
+        <li><a href="{{url_for('static', filename='media/TOTs interview report.docx')}}" download class="underline text-green-700 italic">TOT's Interview Report</a></li>
+        <li><a href="{{url_for('static', filename='media/Quarterly Report.docx')}}" download class="underline text-green-700 italic">DAUWOYE Quarterly Report DECEMBER FINAL</a></li>
+        <li><a href="{{url_for('static', filename='media/2021 REPORT.docx')}}" download class="underline text-green-700 italic">2021 Full Report</a></li>
+        </ul>
+    </div>
+    <div class="mt-10">
+        <h3 class="font-semibold">2022 - 2024 REPORTS</h3>
+        <p>Dive deep into our milestones in the year 2022, get to know our accomplishments towards helping women and youths realize their dreams.</p>
+        <ul>
+        <li><a href="{{url_for('static', filename='media/2022.docx')}}" download class="underline text-green-700 italic">2022 Full Report</a></li>
+        <li><a href="{{url_for('static', filename='media/Q5 QUARTERLTY NARRATIVE REPORT.docx')}}" download class="underline text-green-700 italic">2019 Q5 QUARTERLTY NARRATIVE REPORT </a></li>
+        </ul>
+    </div>
+</div>
+
+</section>
+
+<section class="max-w-5xl p-5 mx-auto">
+<div class="ml-10 py-5">
+    <h1 class="text-blue-500 font-semibold">YOUTH ENGAGEMENT</h1>
+    <p>The steps below are used to keep our youths engaged in within their society. Our measures are not limited to the steps below and apply various methodologies in our day-to-day interactions.</p>
+    <ul class="list-disc">
+        <li>We educate the youth on the advantages of abstinence and use of protection during sex to curb spread of STIs,STDs and HIV/AIDS. During such engagements ,they are also advised on family planning so as to bring up a family within their living capabilities</li>
+        <li>The youths are also trained and mentored on how to become leaders.</li>
+        <li>They are also given opportunities by the organization to actively participate in decision-making processes.</li>
+
+    </ul>
+</div>
+
+</section>
+
+
+{% endblock %}

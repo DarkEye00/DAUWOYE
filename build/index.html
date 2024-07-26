@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dauwoye</title>
+    <link rel="shortcut icon" type="image/png" href="/static/media/logo.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/output/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed6fec6a07.js" crossorigin="anonymous"></script>
+    <script src="/static/js/main.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body class="min-h-screen w-full bg-[#ededed] overflow-x-clip font-sans text-slate-800">
+    <header class="bg-green-200 top-0 z-[50] w-full">
+        <section class="max-w-5xl p-2 flex justify-between items-start sm:w-auto 2xl:ml-[30rem]">
+            <a href="/">
+                <img  class="w-14 h-14 object-cover" src="/static/media/logo.jpeg" alt="logo"></a>
+            <div>
+                <button class="text-3xl md:hidden focus:outline-none" id="hamburger-button">
+                    &#9776;
+                </button>
+                <nav class="mt-3 hidden md:block space-x-5 text-base font-semibold xl:-mr-32" aria-label="main">
+                    <button class="uppercase hover:text-blue-600  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="/">HOME</a></button>
+                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-trigger="hover" class="hover:text-blue-600 hover:underline transition hover:-translate-y-2 hover:translate-x-1 duration-100 ease-out ml-5 ">WHO WE ARE<i class="fa-solid fa-caret-down" style="color: #0f50dd; padding-left:7px;" aria-hidden="true"></i></button>
+    
+                    <!-- Dropdown menu -->
+                    <div id="dropdown" class="z-30 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                          <li>
+                            <a href="/About-us/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About Us</a>
+                          </li>
+                          
+                          <li>
+                            <a href="/About-us/#team" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Team</a>
+                          </li>
+
+                          <li>
+                            <a href="/About-us/#partner" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Partners</a>
+                          </li>
+                        </ul>
+                    </div>
+                    <button class="uppercase hover:text-blue-600  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="/Our-impact/">OUR IMPACT</a></button>
+                    <button class="uppercase hover:text-blue-600  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="/Updates/">REPORTS & UPDATES</a></button> 
+                    <button class="uppercase hover:text-blue-600  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="/blogs/">BLOG</a></button> 
+                    <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="hover:text-blue-600 hover:underline transition hover:-translate-y-2 hover:translate-x-1 duration-100 ease-out ml-5 ">GET INVOLVED<i class="fa-solid fa-caret-down" style="color: #0f50dd; padding-left:7px;" aria-hidden="true"></i></button>
+                    <div id="dropdownHover" class="z-30 hidden bg-white rounded-lg divide-y divide-gray-100 w-44 h-28 shadow-xl">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="/careers/" class="block px-4 py-2 hover:bg-gray-100">Vacancy</a>
+                            </li>
+                            <li>
+                              <a href="/Contact-us/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="/tenders/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tenders</a>
+                              </li>
+                            
+                          </ul>
+                       
+                      </div>
+                    <button class="w-[150px] animate-bounce h-auto bg-blue-600 text-base p-1 rounded-lg shadow-2xl text-white/90"><a href="/Donate/">DONATE NOW</a></button>
+                </nav>
+                
+            </div>
+
+        </section>  
+
+        <!--Mobile menu-->
+        <section id="mobile-menu" class="absolute top-0 bg-black/80 w-full text-2xl font-medium flex-col justify-center origin-top animate-open-menu hidden text-white z-50">
+            <button class="text-6xl self-end px-6 ">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-6 gap-8 text-white " aria-label="mobile-menu">
+                <button><a href="/" class="w-full text-center hover:opacity-80 py-3">
+                    HOME
+                </a></button>
+                <button><a href="/About-us/" class="w-full text-center  hover:opacity-80 py-3">
+                    WHO WE ARE
+                </a></button>
+                <button><a href="/Our-impact/" class="w-full text-center hover:opacity-80 py-3">
+                    OUR IMPACT
+                </a></button>
+                <button><a href="/blogs/" class="w-full text-center hover:opacity-80 py-3">
+                    BLOG
+                </a></button>
+                <button><a href="/Updates/" class="w-full text-center hover:opacity-80 py-3">
+                    REPORTS & UPDATES
+                </a></button>
+                <button><a href="/Contact-us/" class="w-full text-center hover:opacity-80 py-3">
+                    CONTACT US
+                </a></button>
+                <button><a href="/tenders/" class="w-full text-center hover:opacity-80 py-3">
+                    TENDERS
+                </a></button>
+                <button><a href="/Donate/" class="w-full text-center hover:opacity-80 py-3">
+                    DONATE NOW
+                </a></button>
+             
+
+            </nav>
+        </section>
+    </header>
+
+
+    <main>
+<section>
+        
+        
+      
+    
+
+      <div id="default-carousel" class="relative w-full h-[80vh]" data-carousel="slide">
+           <!-- Carousel wrapper -->
+           <div class="relative h-screen overflow-hidden rounded-lg z-10">
+                <!-- Item 1 -->
+               <div class="hidden duration-[4000ms] ease-in-out w-full h-[80vh]" data-carousel-item>
+                   <img src="/static/media/meetup.jpeg" class="absolute block h-[80vh] object-cover w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                   <div class="w-full h-[80vh] bg-black/10 relative flex justify-center items-center text-center z-20">
+                    <p class="text-3xl font-bold text-white font-Roboto italic z-20">WE ARE <br /><span class="auto-type"></span><br>
+                <button class="bg-blue-600 text-xl font-medium font-Inter p-2 text-white mt-3 rounded-md ">Learn More</button>
+            </p> 
+                </div>
+               </div>
+               <!-- Item 2 -->
+               <div class="hidden duration-700 ease-in-out h-[80vh]" data-carousel-item>
+                   <img src="/static/media/team.jpeg" class="absolute block w-full h-[80vh] object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+               </div>
+               <!-- Item 3 -->
+               <div class="hidden duration-700 ease-in-out h-[80vh]" data-carousel-item>
+                   <img src="/static/media/contraception.jpeg" class="absolute block w-full h-[80vh] object-cover  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+               </div>
+               <!-- Item 4 -->
+               <div class="hidden duration-700 ease-in-out h-[80vh]" data-carousel-item>
+                   <img src="/static/media/field.jpeg" class="absolute block w-full h-[80vh] object-cover  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+               </div>
+               <!-- Item 5 -->
+               <div class="hidden duration-700 ease-in-out h-[80vh]" data-carousel-item>
+                   <img src="/static/media/dauwoye.jpeg" class="absolute block w-full h-[80vh] object-cover  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+               </div>
+           </div>
+
+
+       </section>
+
+       <section class="flex max-md:flex-col mx-auto justify-center items-center gap-10 py-10 container text-white">
+
+        <div class="w-[300px] h-[250px] rounded-xl bg-blue-600/80 text-center p-4 text-xl font-semibold" data-aos="flip-up" data-aos-duration="3000">
+            <h2 class="font-bold text-2xl">Our Vision</h2>
+            <p>To be a center of reference in quality healthcare delivery and social-economical empowerment through partnership</p>
+        </div>
+
+        <div class="w-[300px] h-[250px] rounded-xl bg-blue-600/80 text-center p-5 text-xl font-semibold max-md:w-[200px]" data-aos="flip-up" data-aos-duration="1000">
+            <h2 class="font-bold text-2xl">Our Mission</h2>
+            <p>
+                To promote access to comprehensive health services and Inclusive community empowerment for all.
+               <!-- To alleviate barriers in accessing comprehensive health services and promote quality healthcare delivery while creating socio-economic empowerment opportunities for the vulnerable.-->
+            </p>
+
+
+        </div> 
+
+        <div class="w-[300px] h-[250px] rounded-xl bg-blue-600/80 text-center p-4 text-xl font-semibold" data-aos="flip-up" data-aos-duration="2000">
+            <h2 class="font-bold text-2xl">Our Core Values</h2>
+            <ul class="list-disc list-inside text-left pl-5">
+                <li>Integrity</li>
+                <li>Honesty</li>
+                <li>Transparency</li>
+                <li>Accountability</li>
+                <li>Collaboration & Partnership</li>
+            </ul>
+        </div>
+           
+       </section> 
+       <section class="flex justify-center bg-slate-200 py-5">
+            <div class="text-center max-w-4xl">
+                <h2 class="text-3xl text-blue-600 font-semibold">ABOUT US</h2>
+                <p>Daraja United Women and Youth Empowerment (DAUWOYE) a national NGO that is based in Kenya and its core mandate is to improve quality of life of vurlnerable communities via Advocacy, Awareness creation, Service delivery,and research.</p>
+                <br>
+                <p>We are located on the third floor at Masaba Building, next to The Place Building that houses NHIF Kisii, Kenya.</p>
+
+                <button class="bg-blue-600 text-xl font-medium font-Inter p-2 text-white mt-3 rounded-md hover:text-black">Get To Know Us</button>
+            </div>
+         
+
+       </section>
+
+       <section class="py-5 mx-auto ">
+            <div>
+                <h2 class="text-3xl p-1 text-blue-600 font-semibold">Latest News...</h2>
+                <div class="p-5 flex items-center max-md:flex-col">
+                    <img class="w-[350px] h-[300px] object-cover pr-5" src="/static/media/clinic.jpg" />
+                    <p class="text-left">Daraja Medical Facility Center is a health facility under Daraja united Women & youth Empowerement Organization being recognized by TIKO project supported by @Triggerise as the best health facility in @kisiicounty. Taking small steps every day with quest of making our society better where human rights are respected and promoted.@UNFPA Kenya, NAYA Kenya, Planned Parenthood, Great Gains Kenya, Red Cross Society and United Nations Trust Fund.<br>
+                    <span class="text-blue-600 underline "><a href="https://www.facebook.com/dauwoye.org" target="_blank">Read more on our Facebook Page</a></span>
+
+                    </p>
+                </div>
+            </div>
+
+       </section>
+
+    </main>
+
+    <footer class=" inset-x-0 bottom-0 bg-green-200 w-full overflow-x-clip  gap-x-10 p-5">
+       
+        <section class="max-w-4xl mx-auto grid grid-flow-col px-5 space-y-5 max-sm:grid-flow-row">
+               
+            <div class="space-y-5">
+                <h2 class="uppercase font-semibold text-lg">Do you have any questions ? <br> <span>Call or Visit Us </span></h2>
+                <p class=" flex ">
+                    <svg class="w-5 h-5 mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#737373" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                    </svg>
+                    0722 468 422
+                </p> 
+                <p class=" flex underline">
+                    <svg class="w-6 h-6 mr-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#737373" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                    dauwoye.org.ke@gmail.com
+
+                </p>
+                <p>
+                    Masaba Building 3<sup>rd</sup> floor
+                    Next to<br> NHIF Building Kisii, Kenya
+                </p>
+            </div>
+            <div class="space-y-5">
+                <h2 class="uppercase font-semibold">Quick Links</h2>
+                <ul class="list-none text-start space-y-5">       
+                    <li><a class="hover:text-blue-600" href="/Contact-us/">Work With Us</a></li>
+                    <li><a class="hover:text-blue-600" href="/About-us/">Who Are We</a></li>
+                    <li><a class="hover:text-blue-600" href="#">Latest Stories</a></li>
+                           
+                </ul>
+            </div> 
+            <div>
+                <p class="text-left font-semibold">CONNECT WITH US: </p>
+                    <div class="flex">
+                        <a class="pt-2 pl-2" href="https://www.linkedin.com/in/dauwoye-org-b72256133/"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]"><path fill="#0749bb" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+
+                        <a class="pt-2 pl-2" href="https://x.com/dauwoye" target="_blank"><!--Twitter-->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
+                                <path fill="#0749bb"  d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/>
+                            </svg>
+                        </a>
+                       
+                        <a class="pt-2 pl-2" href="https://www.facebook.com/dauwoye.org" target="_blank"> <!--facebook-->
+                            <svg xmlns="http://www.w3.org/2000/svg"height="1.5em" viewBox="0 0 512 512" class="2xl:h-[3rem]"><path fill="#0749bb"  d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                        </a>
+                    </div>
+                </p>
+        </section>
+        <p class="text-center p-2 font-medium">Copyright © 2024 Daraja United Women and Youth Empowerment Organization.All Rights Reserved.</p>
+
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script>
+        var typed = new Typed (".auto-type", 
+            {
+                strings: ["DARAJA UNITED WOMEN AND <br /> YOUTH EMPOWERMENT<br /> ORGANIZATION"],
+                typeSpeed: 30,
+                backSpeed: 100,
+                loop: false,
+                fadeOut: true,
+                
+            showCursor:false
+            
+            })
+      </script>
+      
+</body>
+</html>

@@ -14,9 +14,17 @@ module.exports = {
           "80%": { transform: "scaleY(1.2)" },
           "100%": { transform: "scaleY(1)" },
         },
+        "marquee":{
+        
+          "100%": {transform: 'translate(-100%)'},
+        }
       },
       animation: {
         "open-menu": "open-menu 0.5s ease-in-out forwards",
+      },
+      animation: {
+        'marquee': 'marquee var(--marquee-duration) linear infinite',
+        
       },
     },
   },

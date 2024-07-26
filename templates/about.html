@@ -3,24 +3,24 @@
 {% block content %}
 <section class="w-full font-Inter">
     <div class="h-[70vh]">
-        <div class="absolute bg-black/30 w-full h-[70vh] text-white flex items-center justify-center text-2xl">
-            <p>DAUWOYE<span class="text-blue-600 text-3xl"> .</span> WHO WE ARE</p>
+        <div class="absolute bg-black/10 w-full h-[70vh] text-white flex items-center justify-center text-2xl">
+            <p class="animate__animated animate__bounceInLeft">DAUWOYE<span class="text-blue-600 text-3xl "> .</span> WHO WE ARE</p>
 
         </div>
         <img class="w-full h-[inherit] object-cover" src="{{url_for('static', filename='media/Mentorship.jpeg')}}" />
 
     </div>
 
-    <div class="max-w-4xl text-center mx-auto py-5">
+    <div class="text-center w-full py-5 bg-white">
         <h2 class="text-blue-600 text-2xl font-semibold">About Us</h2>
         <h2 class="font-semibold text-xl">Welcome To DAUWOYE</h2>
-        <p>Daraja United Women and Youth Empowerment is a Kenyan, women/youth – led national NGO focused on women and youth empowerment. We work in the rural areas of Kenya, but are currently in Kisii and Nyamira counties. It was incepted in 1997 as a self-help group by the name of Bidii Women Group. The focus of the organization was to create economic empowerment opportunities for women. The organization took part in several program focusing on HIV/AIDs, sexual reproductive health in general. In December 2007, we registered as an NGO (Non-Governmental Organization) under our current title, Daraja United Women and Youth Empowerment (DAUWOYE).</p>
+        <p class="mx-5">Daraja United Women and Youth Empowerment is a Kenyan, women/youth – led national NGO focused on women and youth empowerment. We work in the rural areas of Kenya, but are currently in Kisii and Nyamira counties. It was incepted in 1997 as a self-help group by the name of Bidii Women Group. The focus of the organization was to create economic empowerment opportunities for women. The organization took part in several program focusing on HIV/AIDs, sexual reproductive health in general. In December 2007, we registered as an NGO (Non-Governmental Organization) under our current title, Daraja United Women and Youth Empowerment (DAUWOYE).</p>
     </div>
 
-    <div class="w-full text-center mx-auto py-5 bg-white">
+    <div class="w-full text-center mx-auto py-5">
         <h2 class="text-blue-600 text-2xl font-semibold">What We Do</h2>
 
-        <div class="flex gap-x-10 items-center justify-center max-md:flex-col">
+        <div class="flex gap-x-10 items-center justify-center max-md:flex-col mx-5">
             <div>
                 <h2 class="text-2xl py-5 font-semibold">Health<br> Program</h2>
 
@@ -42,25 +42,148 @@
                 <img class="w-[200px] h-[200px] object-cover" src="{{url_for('static', filename='media/Youth.jpg')}}" />
             </div>
         </div>
-    
-        
-    </div>
-    <div class="py-5">
-        <h2 class="text-blue-600 text-2xl font-semibold text-center">OUR PARTNERS</h2>
-
-        <div class="flex gap-5 justify-center">
             
-            <img class="w-[100px] h-[100px] rounded-full" src="{{url_for('static', filename='media/Umande trust.jfif')}}"/>
-            <img class="w-[100px] h-[100px] rounded-full" src="{{url_for('static', filename='media/Redcross.png')}}"/>
-            <img class="w-[100px] h-[100px] rounded-full" src="{{url_for('static', filename='media/Pact.jfif')}}"/>
-            <img class="w-[100px] h-[100px] rounded-full" src="{{url_for('static', filename='media/ng council.jfif')}}"/>
-            <img class="w-[100px] h-[100px] rounded-full" src="{{url_for('static', filename='media/NACC.png')}}"/>
-            <img class="w-[100px] h-[100px] rounded-full" src="{{url_for('static', filename='media/Futures GI.jfif')}}"/>
-            <img class="w-[100px] h-[100px] rounded-full" src="{{url_for('static', filename='media/Khan.png')}}"/>
-            <img class="w-[100px] h-[100px] rounded-full" src="{{url_for('static', filename='media/PP Global.jfif')}}"/>
-
-        </div>
     </div>
 </section>
+<section>
+    <div id="team" class="py-5 bg-white w-full">
+        <h2 class="text-blue-600 text-2xl font-semibold text-center">THE TEAM</h2>
+
+        <div class="flex flex-col justify-center items-center gap-6">
+            <div class="flex gap-6 max-md:flex-col pb-5 ">
+                
+                <div class="flex justify-center items-center max-md:flex-col">
+                    <img class="w-[100px] h-[100px] rounded-full object-cover" src="{{url_for('static', filename='media/chairman.jpg')}}"/>
+                    <br>
+                    <p class="w-[200px] text-balance ml-5"><span class="font-semibold text-blue-400">Chairman</span><br>
+                        Malach Obare: Trained health provider and proprietor of Igare Medical Center with enormous experience in health management systems and community leardership.</p>
+                </div>
+                <div class="flex justify-center items-center max-md:flex-col max-md:w-full">
+                    <img class="w-[100px] h-[100px] rounded-full object-cover" src="{{url_for('static', filename='media/CEO.jpg')}}"/>
+                    <br>
+                    <p class="text-balance w-[200px] ml-5"><span class="font-semibold text-blue-400">CEO</span><br>
+                    Winfridah Abuya: Trained healthcare provider, proprietor and founder of Daraja Medical Center, which helped in the formation of DAUWOYE. She also acts as the secretary to the board.</p>
+                </div>
+            </div>
+            <div class="flex gap-x-5 max-md:flex-col">
+                <div class="flex justify-center items-center max-md:flex-col max-md:w-full">
+
+                    <img class="w-[100px] h-[100px] rounded-full object-cover" src="{{url_for('static', filename='media/treasurer.jpg')}}"/>
+                    <br>
+                    <p class="w-[200px] *:text-balance ml-5"><span class="font-semibold text-blue-400">Treasurer</span><br>
+                        Jane Omwangwa: Nurse manager in public health facilities in Kisii County for over ten years.</p>
+                </div>
+                <div class="flex justify-center items-center max-md:flex-col max-md:w-full">
+
+                    <img class="w-[100px] h-[100px] rounded-full object-cover" src="{{url_for('static', filename='media/vice chair.jpg')}}"/>
+                    <br>
+                    <p class="w-[200px] text-balance ml-5"><span class="font-semibold text-blue-400">Vice Chairman</span><br>
+                        Japhet Onsongo: Trained accountant with expertise in audits and financial leadership.</p>
+                </div>
+            </div>
+            <div class="flex gap-x-5 max-md:flex-col">
+                <div class="flex justify-center items-center max-md:flex-col max-md:w-full">
+
+                    <img class="w-[100px] h-[100px] rounded-full object-cover" src="{{url_for('static', filename='media/Sec.jpg')}}"/>
+                    <br>
+                    <p class="w-[200px] text-balance ml-5"><span class="font-semibold text-blue-400">Assistant Secretary</span><br>
+                        Paul Okari, Assistant secretary: Former Human Resource and Administrator in public health facilities in Kisii County.</p>
+                </div>
+                <div class="flex justify-center items-center max-md:flex-col max-md:w-full">
+
+                    <img class="w-[100px] h-[100px] rounded-full object-cover" src="{{url_for('static', filename='media/fin.jpg')}}"/>
+                    <br>
+                    <p class="w-[200px] text-balance ml-5"><span class="font-semibold text-blue-400">Financial Advisor</span><br>
+                      Abraham Kebiro: Former Kenya Treasury employee for over 35 years.</p>
+                </div>
+            </div>
+
+            <div class="flex gap-x-5 max-md:flex-col">
+        
+                <div class="flex justify-center items-center max-md:flex-col max-md:w-full">
+
+                    <img class="w-[100px] h-[100px] rounded-full" src="{{url_for('static', filename='media/shaools.jpg')}}"/>
+                    <br>
+                    <p class="w-[200px] ml-5 text-balance"><span class="font-semibold text-blue-400">Legal Advisor</span><br>
+                        Charles Oyienda:  A lawyer by profession and has experience for over 20 years.</p>
+                </div>
+
+                <div class="flex justify-center items-center max-md:flex-col max-md:w-full">
+
+                    <img class="w-[100px] h-[100px] rounded-full object-cover" src="{{url_for('static', filename='media/Anne.jpg')}}"/>
+                    <br>
+                    <p class="w-[200px] ml-5 text-balance"><span class="font-semibold text-blue-400"></span><br>
+                        Anne Basweti: Teacher for over 15 years who is an expert in handling youths and adolescents in mental and reproductive health education</p>
+                </div> 
+
+            </div>    
+            <div class="flex justify-center items-center max-md:flex-col max-md:w-full">
+
+                <img class="w-[100px] h-[100px] rounded-full object-cover" src="{{url_for('static', filename='media/woman.png')}}"/>
+                <br>
+                <p class="w-[200px] text-balance ml-5"><span class="font-semibold text-blue-400">Youth Representative</span><br>
+                Mourine Moraa: Final year college student leader with skills in capacity building on behavioral change and self-reliance.</p>
+            </div> 
+                    
+        </div>
+             
+    </div>
+</section>
+<section>
+    
+    <div id="partner" class="pt-5 text-center">
+        <h2 class="text-blue-600 text-2xl font-semibold text-center">OUR PARTNERS</h2>
+        <h2 class="text-xl pb-5">Committed to Transparency <br>
+        We thank <span class="text-blue-500">our donors</span> for working with us.</h2>
+
+        <h3 class="text-2xl font-bold p-2">Current Donors</h3>
+        <div class="flex w-full justify-center overflow-hidden whitespace-nowrap">
+
+        <div class="animate-marquee w-[200%] flex gap-4" style="--marquee-duration: 10000ms;">
+            
+                <div class="w-[100px] h-[100px]">
+                <img class="rounded-full object-cover" src="{{url_for('static', filename='media/NG.png')}}"/>
+                </div>
+                <div class="w-[100px] h-[100px]">
+                <img class="rounded-full object-cover" src="{{url_for('static', filename='media/Kisii.jpeg')}}"/></div>
+                <div class="w-[100px] h-[100px]">
+                <img class="rounded-full object-cover" src="{{url_for('static', filename='media/Umande trust.jfif')}}"/></div>
+                <div class="w-[100px] h-[100px]">
+                <img class="rounded-full object-cover" src="{{url_for('static', filename='media/Redcross.png')}}"/></div>
+                <div class="w-[100px] h-[100px]">
+                <img class="rounded-full object-cover" src="{{url_for('static', filename='media/Pact.jfif')}}"/></div>
+                <div class="w-[100px] h-[100px]">
+                    <img class="rounded-full object-cover" src="{{url_for('static', filename='media/ng council.jfif')}}"/>
+                </div>
+                <div class="w-[100px] h-[100px]">
+                    <img class="rounded-full object-cover" src="{{url_for('static', filename='media/NACC.png')}}"/></div>
+                <div class="w-[100px] h-[100px]">
+                    <img class="rounded-full object-cover" src="{{url_for('static', filename='media/Futures GI.jfif')}}"/>
+                </div>
+                <div class="w-[100px] h-[100px]">
+                    <img class="rounded-full object-cover" src="{{url_for('static', filename='media/Khan.png')}}"/>
+                </div>
+                <div class="w-[100px] h-[100px]">
+                    <img class="rounded-full object-cover" src="{{url_for('static', filename='media/PP Global.jfif')}}"/>
+                </div>
+                <div class="w-[100px] h-[100px]">
+                    <img class="rounded-full object-cover" src="{{url_for('static', filename='media/moh.jpeg')}}"/>
+                </div>
+                <div class="w-[100px] h-[100px]">
+                    <img class="rounded-full object-cover" src="{{url_for('static', filename='media/ngo.jpg')}}"/>
+                </div>
+                <div class="w-[100px] h-[100px]">
+                    <img class="rounded-full object-cover" src="{{url_for('static', filename='media/PSI.jpeg')}}"/>
+                </div>
+                <div class="w-[100px] h-[100px]">
+                    <img class="rounded-full object-cover" src="{{url_for('static', filename='media/triggerise.jpeg')}}"/>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</section>
+
 
 {% endblock %}
