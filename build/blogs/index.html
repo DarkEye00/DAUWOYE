@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <title>Dauwoye Organization</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dauwoye</title>
+    <meta name="description" content="Daraja United Women and Youth Empowerment is a Kenyan, women/youth–led national NGO focused on women and youth empowerment. We work in the rural areas of Kenya, but are currently in Kisii and Nyamira counties.">
+    <meta name="keywords" content="Women organizations in Rural Kenya">
+    <meta name="keywords" content="NGOs in Kenya">
+    <meta name="keywords" content="Daraja United Women and Youth empowerment">
+    <meta name="keywords" content="Kisii NGOs">
+    <meta name="keywords" content="Advocacy organizations against FGM">
+    <meta name="keywords" content="Women Empowerment">
     <link rel="shortcut icon" type="image/png" href="/static/media/logo.jpeg" />
     <link rel="stylesheet" href="/static/output/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet">
@@ -15,7 +22,7 @@
     
 
 </head>
-<body class="min-h-screen w-full bg-[#ededed] overflow-x-clip font-Roboto text-slate-800 ">
+<body class="min-h-screen w-full bg-[#ededed] overflow-x-clip font-sans text-slate-800">
     <header class="bg-green-200 top-0 z-[50] w-full">
         <section class="max-w-5xl p-2 flex justify-between items-start sm:w-auto 2xl:ml-[30rem]">
             <a href="/">
@@ -26,56 +33,44 @@
                 </button>
                 <nav class="mt-3 hidden md:block space-x-5 text-base font-semibold xl:-mr-32" aria-label="main">
                     <button class="uppercase hover:text-blue-600  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="/">HOME</a></button>
-                    
-                           
                     <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" data-dropdown-trigger="hover" class="hover:text-blue-600 hover:underline transition hover:-translate-y-2 hover:translate-x-1 duration-100 ease-out ml-5 ">WHO WE ARE<i class="fa-solid fa-caret-down" style="color: #0f50dd; padding-left:7px;" aria-hidden="true"></i></button>
     
-    <!-- Dropdown menu -->
-    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-          <li>
-            <a href="/About-us/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About Us</a>
-          </li>
-          <li>
-            <a href="/About-us/#team" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Team</a>
-          </li>
-          <li>
-            <a href="/About-us/#partner" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Partners</a>
-          </li>
-          
-        </ul>
-    </div>
-    
-    
+                    <!-- Dropdown menu -->
+                    <div id="dropdown" class="z-30 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                          <li>
+                            <a href="/About-us/" class="block px-4 py-2 hover:bg-blue-200 ">About Us</a>
+                          </li>
+                          
+                          <li>
+                            <a href="/About-us/#team" class="block px-4 py-2 hover:bg-blue-200 ">Our Team</a>
+                          </li>
+
+                          <li>
+                            <a href="/About-us/#partner" class="block px-4 py-2 hover:bg-gray-200">Partners</a>
+                          </li>
+                        </ul>
+                    </div>
                     <button class="uppercase hover:text-blue-600  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="/Our-impact/">OUR IMPACT</a></button>
-                  
-                    <button class="uppercase hover:text-blue-600  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="/Updates/">REPORTS & UPDATES</a></button>
+                    <button class="uppercase hover:text-blue-600  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="/Updates/">REPORTS & UPDATES</a></button> 
                     <button class="uppercase hover:text-blue-600  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="/blogs/">BLOG</a></button> 
-                    
                     <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="hover:text-blue-600 hover:underline transition hover:-translate-y-2 hover:translate-x-1 duration-100 ease-out ml-5 ">GET INVOLVED<i class="fa-solid fa-caret-down" style="color: #0f50dd; padding-left:7px;" aria-hidden="true"></i></button>
-                    <div id="dropdownHover" class="z-10 hidden bg-white rounded-lg divide-y divide-gray-100 w-44 h-28 shadow-xl">
+                    <div id="dropdownHover" class="z-30 hidden bg-white rounded-lg divide-y divide-gray-100 w-44 h-28 shadow-xl">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="/careers/" class="block px-4 py-2 hover:bg-gray-100">Vacancy</a>
+                                <a href="/careers/" class="block px-4 py-2 hover:bg-blue-200">Vacancy</a>
                             </li>
                             <li>
-                              <a href="/Contact-us/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact Us</a>
+                              <a href="/Contact-us/" class="block px-4 py-2 hover:bg-blue-200 ">Contact Us</a>
                             </li>
                             <li>
-                                <a href="/tenders/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Tenders</a>
+                                <a href="/tenders/" class="block px-4 py-2 hover:bg-blue-200">Tenders</a>
                               </li>
                             
                           </ul>
-                        <!--<ul class="text-sm py-2 text-blue-800 hover:text-white">
-                               
-                          <a href="/careers/"><li class="block px-4 py-2 hover:bg-gray-600">Vacancy</li></a>
-                           
-                          <a href="/Contact-us/"><li class="block px-4 py-2 hover:bg-gray-600"></i>Contact Us</li></a>
-                          <a href="/tenders/"><li class="block px-4 py-2 hover:bg-gray-600">Tenders</li></a>
-                            
-                        </ul>-->
+                       
                       </div>
-                    <button class="w-[150px] animate__animated  animate__heartBeat h-auto bg-blue-600 text-base p-1 rounded-lg shadow-2xl text-white/90">DONATE NOW</button>
+                    <button class="w-[100px] h-auto bg-blue-600 text-base p-1 rounded-lg shadow-2xl text-white/90"><a href="/Donate/">DONATE</a></button>
                 </nav>
                 
             </div>
@@ -83,7 +78,7 @@
         </section>  
 
         <!--Mobile menu-->
-        <section id="mobile-menu" class="absolute top-0 z-20 bg-black/80 w-full text-2xl font-medium flex-col justify-center origin-top animate-open-menu hidden text-white">
+        <section id="mobile-menu" class="absolute top-0 bg-black/80 w-full text-2xl font-medium flex-col justify-center origin-top animate-open-menu hidden text-white z-50">
             <button class="text-6xl self-end px-6 ">
                 &times;
             </button>
@@ -101,7 +96,7 @@
                     BLOG
                 </a></button>
                 <button><a href="/Updates/" class="w-full text-center hover:opacity-80 py-3">
-                    NEWS & UPDATES
+                    REPORTS & UPDATES
                 </a></button>
                 <button><a href="/Contact-us/" class="w-full text-center hover:opacity-80 py-3">
                     CONTACT US
@@ -117,7 +112,6 @@
             </nav>
         </section>
     </header>
-
 
     <main class="h-full w-full">
                 
